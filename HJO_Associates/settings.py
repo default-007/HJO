@@ -14,7 +14,7 @@ import os
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'v4czsnn1gsx5nc02^q--e_pr=te8g64-gw^1)cxr_1a_nm@2e_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['hjolaw.com', 'www.hjolaw.com']
 
@@ -80,12 +80,11 @@ WSGI_APPLICATION = 'HJO_Associates.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'database_name',
-        'USER': 'database_user',
-        'PASSWORD': 'user_password'
-        'HOST': '*',
-        'PORT': '*',
-  }
+        'NAME': 'hjo',
+        'USER': 'default-007',
+        'PASSWORD': 'expandebles7'
+        'HOST': 'localhost',   
+    }
 }
 
 
