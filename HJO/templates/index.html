@@ -1,0 +1,495 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!-- Banner -->
+<div class="banner-area banner-img-one">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="banner-item">
+                            <div class="banner-left">
+                                <h1>H.J Otieno & Associates</h1>
+                                <h2 style="color: white;">Make It Our Fight.</h2>
+                                <a href="#">FREE CONSULTATION
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="banner-item">
+                            <div class="banner-right">
+                                <img class="banner-animation" src="{% static 'assets/img/IMGL8868.jpg'%}" alt="Banner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="banner-bottom">
+            <ul>
+                <li>
+                    <i class="fas fa-users"></i>
+                </li>
+                <li>
+                    <span>100% Legal</span>
+                    <p>Govt Approved</p>
+                    <img src="{% static 'assets/img/home-one/9.png'%}" alt="Shape">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Banner -->
+
+<!-- Help -->
+<div class="help-area pb-70">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="help-item help-left">
+                    <img src="{% static 'assets/img/home-one/5.jpg'%}" alt="Help">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="help-item">
+                    <div class="help-right">
+                        <h2>We Provide Qualified Lawyers For Your Assistance </h2>
+                        <p>The Whole Team of Hope Joyce & Associates Law Firm brings a strong and fearless attitude
+                            to all the clients
+                            they assist. And, to make sure that you win, our team will provide you with High-quality
+                            service.</p>
+                        <div class="help-inner-left">
+                            <ul>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Browse Our Website
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Choose Services
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help-inner-right">
+                            <ul>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Quick Reply
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Best Performances
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help-signature">
+                            <img src="{% static 'assets/img/signature.png'%}" alt="Signature"
+                                style="width: auto; height: 80px;">
+                        </div>
+                        <a class="cmn-btn" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="help-shape">
+            <img src="{% static 'assets/img/home-one/6.png'%}" alt="Shape">
+        </div>
+    </div>
+</div>
+<!-- End Help -->
+
+<!-- Practice -->
+<section class="practice-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span>HOW CAN WE HELP YOU</span>
+            <h2>Our Legal Practices Areas</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Civil Law</h3>
+                    <p>Our Lawyers are highly trained and skilled in the Civil Law sector to provide the top
+                        service.</p>
+                    <a href="{% url 'civil'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Family Law</h3>
+                    <p>Lawyer of Our Squad is tremendously skillful to acquire a positive outcome and honest.</p>
+                    <a href="{% url 'probate'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Commercial Law</h3>
+                    <p>You don’t need to worry about your business law till our Master’s Lawyers are here to help
+                        you.</p>
+                    <a href="{% url 'corporate'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="far fa-building"></i>
+                    </div>
+                    <h3>Intellectual Property Law</h3>
+                    <p>Need Lawyers for Intellectual Property law?</p>
+                    <a href="{% url 'conveyancing'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Criminal Law</h3>
+                    <p>We provide the Pre-Eminent Lawyers to solve the tough Criminal cases to help you.</p>
+                    <a href="{% url 'criminal'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Cyber Law</h3>
+                    <p>We proffer cyber specialists Lawyers who are brilliant in determining these types of cases.
+                    </p>
+                    <a href="{% url 'cyber'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Practice -->
+
+<!-- Expertise -->
+<section class="expertise-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="section-title text-left">
+                    <span>OUR EXPERTISE</span>
+                    <h2>Law Firm Devoted To Our Clients</h2>
+                </div>
+                <div class="expertise-item">
+                    <ul>
+                        <li class="wow fadeInUp" data-wow-delay=".3s">
+                            <div class="expertise-icon">
+                                <i class="fas fa-certificate"></i>
+                                <img src="{% static 'assets/img/home-one/11.png'%}" alt="Shape">
+                            </div>
+                            <h3>Experience</h3>
+                            <p>Squads of Hope Joyce & Associates are incredibly professional and understand the
+                                situation of their
+                                clients and encourage them until obtaining victory</p>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay=".4s">
+                            <div class="expertise-icon">
+                                <i class="fas fa-user-graduate"></i>
+                                <img src="{% static 'assets/img/home-one/11.png'%}" alt="Shape">
+                            </div>
+                            <h3>Skilled Lawyer</h3>
+                            <p>Our Lawyers are creative and skilled and it helps them to find a huge variety of
+                                solution to win</p>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay=".5s">
+                            <div class="expertise-icon">
+                                <i class="fas fa-balance-scale"></i>
+                                <img src="{% static 'assets/img/home-one/11.png'%}" alt="Shape">
+                            </div>
+                            <h3>Legal Proces</h3>
+                            <p>We maintain all the legal documents and papers and start to reach our destination in
+                                a legal way</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="expertise-image">
+                    <img src="{% static 'assets/img/standard.jpeg'%}" alt="Expertise">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Expertise -->
+<br>
+<br>
+<br>
+
+<!-- Team -->
+<section class="team-area">
+    <div class="container">
+        <div class="section-title">
+            <span>TEAM MEMBER</span>
+            <h2>Meet Our Expert Lawyers</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">
+
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="team-item">
+                    <img src="{% static 'assets/img/IMGL8868.jpg'%}" alt="Team">
+                    <div class="team-inner">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a href="Lawyer-details.html">Adv. Hope Otieno</a>
+                        </h3>
+                        <span>Managing DIrector</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="team-item">
+                    <img src="{% static 'assets/img/charity.jpg'%}"
+                        style="width: 255px; height: 255px; object-fit: contain;" alt="Team">
+                    <div class="team-inner">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a href="Lawyer-details.html">Charity Sabina</a>
+                        </h3>
+                        <span>Intern</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End Team -->
+
+<!-- Contact Form -->
+<div class="contact-form pb-100">
+    <!-- Location -->
+    <div class="loaction-area">
+        <div class="container">
+            <div class="row location-bg">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <img src="{% static 'assets/img/home-one/12.png'%}" alt="Shape">
+                        </div>
+                        <h3>Location</h3>
+                        <ul>
+                            <li>8th Floor Parkland Road,Victoria Plaza, Nairobi-Kenya</li>
+                        </ul>
+                        <a class="location-link" href="contact.html">View on gogle map</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="fas fa-envelope"></i>
+                            <img src="{% static 'assets/img/home-one/12.png'%}" alt="Shape">
+                        </div>
+                        <h3>Email</h3>
+                        <ul>
+                            <li>
+                                <a href="mailto:info@hjoassociates.com">info@hjotienoassociates.com</a>
+                            </li>
+                            <li>
+                                <a href="mailto:admin@hjoassociates.com">admin@hjotienoassociates.com</a>
+                            </li>
+                        </ul>
+                        <a class="location-link" href="#">Mail Us</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="fas fa-phone-volume"></i>
+                            <img src="{% static 'assets/img/home-one/12.png'%}" alt="Shape">
+                        </div>
+                        <h3>Phone</h3>
+                        <ul>
+                            <li>
+                                <a href="tel:+0755543332322">+07 5554 3332 322</a>
+                            </li>
+                            <li>
+                                <a href="tel:+0555962435736">+05 5596 2435 736</a>
+                            </li>
+                        </ul>
+                        <a class="location-link" href="#">Call Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Location -->
+
+    <div class="container-fluid">
+        <form id="contactForm">
+            <div class="row contact-wrap">
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="form-control" required
+                            data-error="Please enter your name" placeholder="Your Full Name">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-control" required
+                            data-error="Please enter your email" placeholder="Your Email">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                        <input type="text" name="phone_number" id="phone_number" required
+                            data-error="Please enter your number" class="form-control" placeholder="Your Phone">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                        <input type="text" name="msg_subject" id="msg_subject" class="form-control" required
+                            data-error="Please enter your subject" placeholder="Subject">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-12">
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="8" required
+                            data-error="Write your message" placeholder="Case Description"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-12">
+                    <div class="text-center">
+                        <button type="submit" class="contact-btn">Submit Case</button>
+                    </div>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- End Contact Form -->
+
+<!-- Blog -->
+<section class="blog-area pt-100">
+    <div class="container">
+        <div class="section-title">
+            <span>BLOG</span>
+            <h2>Our Latest Blogs</h2>
+        </div>
+        <div class="blog-slider owl-theme owl-carousel">
+            {% for blog in blogs %}
+            <div class="blog-item">
+                <a href="{% url 'bdetail' blog.id%}">
+                    <img src="{{blog.image.url}}" alt="Blog">
+                </a>
+                <div class="blog-inner">
+                    <span>{{blog.tag}}</span>
+                    <h3>
+                        <a href="{% url 'bdetail' blog.id%}">{{blog.title}}</a>
+                    </h3>
+                    <ul>
+                        <li>
+                            <i class="far fa-calendar-alt"></i>
+                            {{blog.created}}
+                        </li>
+                        <li>
+                            <i class="fas fa-user-alt"></i>
+                            <a href="#">{{blog.author}}</a>
+                        </li>
+                    </ul>
+                    <p>{{blog.post|safe|truncatewords:"30"|linebreaks}}</p>
+                    <a class="blog-link" href="{% url 'bdetail' blog.id%}">
+                        Read More
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End Blog -->
+{% endblock %}

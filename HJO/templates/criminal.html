@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!-- Page Title -->
+<div class="page-title-area title-img-one">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="page-title-text">
+                <h2>Practice Details</h2>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>Practice Details</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Title -->
+
+<!-- Practice Details -->
+<div class="practice-details-area pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="practice-details-item">
+                    <div class="practice-details-content">
+                        <div class="section-title text-left">
+                            <h2>Criminal Litigation</h2>
+                        </div>
+                        <p>At H.J Otieno and Associates, litigation is always a last option. We advise clients on and
+                            facilitate
+                            various forms of alternative dispute resolution mechanisms including negotiation, mediation
+                            and
+                            Arbitration. </p>
+                        <p>Sometimes, however, litigation is unavoidable. In such circumstances, our dedicated
+                            litigation team
+                            is completely prepared to diligently prosecute or defend your interest before courts and
+                            tribunals in
+                            Kenya.</p>
+                        <ul>
+                            <li><span>Retribution –</span> Criminals ought to Be Punished in some way.</li>
+                            <li><span>Deterrence –</span> Individual deterrence is aimed toward the specific
+                                offender.</li>
+                            <li><span>Incapacitation – </span> Designed simply to keep criminals away from society.
+                            </li>
+                            <li><span>Rehabilitation –</span> Aims at transforming an offender into a valuable
+                                member of society.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+                <div class="practice-details-item">
+                    <div class="blog-details-category">
+                        <ul>
+                            <li>
+                                <a href="{% url 'conveyancing'%}">
+                                    Conveyancing and Real Estate
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'civil'%}">
+                                    Civil Law
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'criminal'%}">
+                                    Corporate and Commercial Law
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'criminal'%}">
+                                    Probate Law
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'criminal'%}">
+                                    Cyber Law
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Family Law
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="practice-details-contact">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-phone-volume"></i>
+                                <a href="tel:+0725916662">Call : (+254) 0725 916 662</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:info@hjolaw.com">info@hjolaw.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marked-alt"></i>
+                                8th Floor Parkland Road,Victoria Plaza, Nairobi-Kenya
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="help-shape">
+        <img src="{% static 'assets/img/home-one/6.png'%}" alt="Shape">
+    </div>
+</div>
+<!-- End Practice Details -->
+{% endblock %}

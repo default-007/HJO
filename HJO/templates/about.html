@@ -1,0 +1,304 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!-- Page Title -->
+<div class="page-title-area page-title-area-three title-img-one">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="page-title-text">
+                <h2>About Our Firm</h2>
+                <ul>
+                    <li>
+                        <a href="{% url 'index'%}">Home</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>About Us</li>
+                </ul>
+                <div class="page-title-btn">
+                    <a href="{% url 'testimonial' %}">ALL TESTIMONIALS
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Title -->
+
+<!-- Help -->
+<div class="help-area help-area-two help-area-four pb-70">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="help-item help-left">
+                    <img src="{% static 'assets/img/Desk.jpeg'%}" alt="Help">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="help-item">
+                    <div class="help-right">
+                        <h2>About Us</h2>
+                        <p>H.J Otieno and Associates is a boutique law firm offering sterling and cost effective legal
+                            services. We
+                            are a full service firm providing creative, innovative and personalized legal advice and
+                            support to
+                            clients.</p>
+                        <p>We are focused on getting to know our clients as this enables us to give them tailor-made
+                            services. Guided by our motto, ‘make it our fight’ we aspire daily to ease our clients’
+                            legal burdens.</p>
+                        <div class="help-inner-left">
+                            <ul>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Browse Our Website
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Choose Services
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help-inner-right">
+                            <ul>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Quick Reply
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Best Performances
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help-signature">
+                            <img src="{% static 'assets/img/signature.png'%}" alt="Signature"
+                                style="width: auto; height: 80px;">
+                        </div>
+                        <h3>Hope Joyce Otieno</h3>
+                        <span>Managing Director</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center help-wrap">
+            <div class="col-lg-6">
+                <div class="help-item">
+                    <div class="help-right">
+                        <h2>Our Lawyers Always Provide The Excellent Service</h2>
+                        <p>Teams of Intelligent & Professional Lawyers of Hope Joyce Otieno & Associztes are always
+                            prepared to make you
+                            triumph. We always try our best to make our clients happy.</p>
+                        <div class="help-inner-left">
+                            <ul>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    On Time Response
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Legal Way
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help-inner-right">
+                            <ul>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Legal Services
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Honest Work
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="cmn-btn" href="{url 'practise'}">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="help-item help-left">
+                    <img src="{% static 'assets/img/home-one/5.jpg'%}" alt="Help">
+                </div>
+            </div>
+        </div>
+        <div class="help-shape">
+            <img src="{% static 'assets/img/home-one/6.png'%}" alt="Shape">
+        </div>
+    </div>
+</div>
+<!-- End Help -->
+
+<!-- Expertise -->
+<section class="expertise-area expertise-area-two pt-100 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span>OUR EXPERTISE</span>
+            <h2>Law Firm Devoted To Our Clients</h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="expertise-item">
+                    <ul>
+                        <li class="wow fadeInUp" data-wow-delay=".4s">
+                            <div class="expertise-icon">
+                                <i class="fas fa-certificate"></i>
+                                <img src="{% static 'assets/img/home-one/11.png'%}" alt="Shape">
+                            </div>
+                            <h3>Experience</h3>
+                            <p>Hope Joyce Otieno & Associztes teams are exceptionally skilled, acknowledge their
+                                client’s condition & help
+                                them to achieve their target.</p>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay=".7s">
+                            <div class="expertise-icon">
+                                <i class="fas fa-user-graduate"></i>
+                                <img src="{% static 'assets/img/home-one/11.png'%}" alt="Shape">
+                            </div>
+                            <h3>Skilled Lawyer</h3>
+                            <p>Our Lawyers are innovative and knowledgeable and help clients pursue a vast number
+                                of solutions to succeed.</p>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay=".10s">
+                            <div class="expertise-icon">
+                                <i class="fas fa-balance-scale"></i>
+                                <img src="{% static 'assets/img/home-one/11.png'%}" alt="Shape">
+                            </div>
+                            <h3>Legal Proces</h3>
+                            <p>We maintain all valid papers and paperwork and continue to meet our destination
+                                legally.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="expertise-item">
+                    <ul>
+                        <li class="wow fadeInUp" data-wow-delay=".3s">
+                            <div class="expertise-icon">
+                                <i class="fas fa-piggy-bank"></i>
+                                <img src="{% static 'assets/img/home-one/11.png'%}" alt="Shape">
+                            </div>
+                            <h3>Low Cost</h3>
+                            <p>Team of Hope Joyce Otieno & Associztes are exceptionally skilled, realize their
+                                client’s condition, help them
+                                to achieve their motive.</p>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay=".4s">
+                            <div class="expertise-icon">
+                                <i class="fas fa-hourglass-half"></i>
+                                <img src="{% static 'assets/img/home-one/11.png'%}" alt="Shape">
+                            </div>
+                            <h3>Good Performance</h3>
+                            <p>Our Lawyers are creative and knowledgeable and support clients by finding numerous
+                                solutions to win.</p>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay=".5s">
+                            <div class="expertise-icon">
+                                <i class="fas fa-comments"></i>
+                                <img src="{% static 'assets/img/home-one/11.png'%}" alt="Shape">
+                            </div>
+                            <h3>Quick Service</h3>
+                            <p>We manage all valid papers and paperwork and continue to enter our path lawfully.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Expertise -->
+<br>
+<!-- Team -->
+<section class="team-area">
+    <div class="container">
+        <div class="section-title">
+            <span>TEAM MEMBER</span>
+            <h2>Meet Our Expert Lawyers</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">
+
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+                <div class="team-item">
+                    <img src="{% static 'assets/img/IMGL8868.jpg'%}" alt="Team">
+                    <div class="team-inner">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a href="#">Adv. Hope Otieno</a>
+                        </h3>
+                        <span>Managing DIrector</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="team-item">
+                    <img src="{% static 'assets/img/charity.jpg'%}"
+                        style="width: 255px; height: 255px; object-fit: contain;" alt="Team">
+                    <div class="team-inner">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a href="#">Charity Sabina</a>
+                        </h3>
+                        <span>Criminal Consultant</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End Team -->
+{% endblock %}

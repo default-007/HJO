@@ -1,0 +1,268 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/meanmenu.css'%}">
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/b28b3c9b17.js" crossorigin="anonymous"></script>
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.min.css'%}">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css'%}">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css'%}">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{% static 'assets/fonts/flaticon.css'%}">
+    <!-- Wow CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css'%}">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css'%}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css'%}">
+
+    <title>H.J Otieno & Associates</title>
+
+    <link rel="icon" type="image/png" href="{% static 'assets/img/Hopelogo.png'%}">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="sk-folding-cube">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    {% include 'navbar/navbar.html' %}
+
+    {% block content%}
+
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer>
+        <!-- Newsletter -->
+        <div class="newsletter-area">
+            <div class="container">
+                <img src="{% static 'assets/img/home-one/newsletter.png'%}" alt="Shape">
+                <h2>Subscribe Newsletter</h2>
+                <form class="newsletter-form" data-toggle="validator">
+                    <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required
+                        autocomplete="off">
+
+                    <button class="btn contact-btn" type="submit">
+                        Subscribe
+                    </button>
+
+                    <div id="validator-newsletter" class="form-result"></div>
+                </form>
+            </div>
+        </div>
+        <!-- End Newsletter -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="footer-item">
+                        <div class="footer-logo">
+                            <h2 class="float-right" style="color: #C16206;">H.J Otieno & <br> Associates </h2>
+                            <a href="#">
+                                <img src="{% static 'assets/img/Hopelogo.png'%}" alt="Logo">
+                            </a>
+
+
+
+                            <p>Our Squad of Attorneys are always here to provide you the best and efficient service.
+                                Still, if you want to know more about us and our firm, you can connect us through social
+                                media.</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/" target="_blank">
+                                        <i class="icofont-youtube-play"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-service">
+                            <h3>Services</h3>
+                            <ul>
+                                <li>
+                                    <a href="{% url 'corporate'%}">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Commercial/Company Law
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'conveyancing'%}">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Conveyancing and Real Estate
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'probate'%}">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Probate Law
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'criminal'%}">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Criminal Law
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'cyber'%}">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Cyber Law
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="footer-item">
+                        <div class="footer-service">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="{%url 'index'%}">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{%url 'about'%}">
+                                        <i class="fas fa-chevron-right"></i>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{%url 'blog'%}">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Blogs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{%url 'appointment'%}">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Appointment
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{%url 'testimonial'%}">
+                                        <i class="fas fa-chevron-right"></i>
+                                        Testimonial
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-find">
+                            <h3>Find Us</h3>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    8th Floor Parkland Road,Victoria Plaza, Nairobi
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone-volume"></i>
+                                    <a href="tel:0725916662">(+254) 0725 916 662</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:info@hjolaw.com">info@hjolaw.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="row">
+                    <div class="col-sm-7 col-lg-6">
+                        <div class="copyright-item">
+                            <p>Copyright @2020 HJO & Associates. Designed by <a href="https://hibootstrap.com/"
+                                    target="_blank">Default-007</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-6">
+                        <div class="copyright-item copyright-right">
+                            <a href="#" target="_blank">Terms & Conditions</a> <span>-</span>
+                            <a href="#" target="_blank">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Essential JS -->
+    <script src="{% static 'assets/js/jquery.min.js'%}"></script>
+    <script src="{% static 'assets/js/popper.min.js'%}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
+    <!-- Meanmenu JS -->
+    <script src="{% static 'assets/js/jquery.meanmenu.js'%}"></script>
+    <!-- Nice Select JS -->
+    <script src="{% static 'assets/js/jquery.nice-select.min.js'%}"></script>
+    <!-- Form Ajaxchimp JS -->
+    <script src="{% static 'assets/js/jquery.ajaxchimp.min.js'%}"></script>
+    <!-- Form Validator JS -->
+    <script src="{% static 'assets/js/form-validator.min.js'%}"></script>
+    <!-- Contact JS -->
+    <script src="{% static 'assets/js/contact-form-script.js'%}"></script>
+    <!-- Owl Carousel JS -->
+    <script src="{% static 'assets/js/owl.carousel.min.js'%}"></script>
+    <!-- Counter JS -->
+    <script src="{% static 'assets/js/jquery.counterup.min.js'%}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js'%}"></script>
+    <!-- Magnific Popup JS -->
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js'%}"></script>
+    <!-- Wow JS -->
+    <script src="{% static 'assets/js/wow.min.js'%}"></script>
+    <!-- Custom JS -->
+    <script src="{% static 'assets/js/custom.js'%}"></script>
+
+</body>
+
+</html>

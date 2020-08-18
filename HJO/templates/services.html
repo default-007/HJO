@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!-- Page Title -->
+<div class="page-title-area title-img-one">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="page-title-text">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>Practices</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Title -->
+
+<!-- Practice -->
+<section class="practice-area practice-area-three pt-100">
+    <div class="container">
+        <h2>Litigation</h2>
+        <p class="text-black-50">
+            At H.J Otieno and Associates, litigation is always a last option. We advise clients on and facilitate
+            various forms of alternative dispute resolution mechanisms including negotiation, mediation and
+            Arbitration.
+        </p>
+        <p class="text-black-50">Sometimes, however, litigation is unavoidable. In such circumstances, our dedicated
+            litigation team
+            is completely prepared to diligently prosecute or defend your interest before courts and tribunals in
+            Kenya.</p>
+        <p class="text-black-50">Our highly efficient litigation team deals in a wide range of contentious matters,
+            including;
+        </p>
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Civil Law</h3>
+                    <p>Our Lawyers are highly trained and skilled in the Civil Law sector to provide the top
+                        service.</p>
+                    <a href="{% url 'civil'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Family Law</h3>
+                    <p>Lawyer of Our Squad is tremendously skillful to acquire a positive outcome and honest.</p>
+                    <a href="{% url 'probate'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Commercial Law</h3>
+                    <p>You don’t need to worry about your business law till our Master’s Lawyers are here to help
+                        you.</p>
+                    <a href="{% url 'corporate'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="far fa-building"></i>
+                    </div>
+                    <h3>Intellectual Property Law</h3>
+                    <p>Need Lawyers for Intellectual Property law?</p>
+                    <a href="{% url 'conveyancing'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Criminal Law</h3>
+                    <p>We provide the Pre-Eminent Lawyers to solve the tough Criminal cases to help you.</p>
+                    <a href="{% url 'criminal'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="practice-item">
+                    <div class="practice-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Cyber Law</h3>
+                    <p>We proffer cyber specialists Lawyers who are brilliant in determining these types of cases.
+                    </p>
+                    <a href="{% url 'cyber'%}">Read More</a>
+                    <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png'%}" alt="Shape">
+                    <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png'%}" alt="Shape">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Practice -->
+{% endblock %}

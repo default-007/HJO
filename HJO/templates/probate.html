@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!-- Page Title -->
+<div class="page-title-area title-img-one">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="page-title-text">
+                <h2>Practice Details</h2>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-right"></i>
+                    </li>
+                    <li>Practice Details</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Title -->
+
+<!-- Practice Details -->
+<div class="practice-details-area pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="practice-details-item">
+                    <div class="practice-details-content">
+                        <div class="section-title text-left">
+                            <h2>Probate Law</h2>
+                        </div>
+                        <p>It is never too early to begin estate planning. At H.J Otieno and Associates, we understand
+                            how
+                            tedious this work can be. We are there to help!
+                        </p>
+                        <p>We provide legal assistance in all aspects of estate planning and succession. Our services
+                            include
+                            drafting of wills, power of attorneys, applying for guardianship orders, obtaining and
+                            confirmation of
+                            grants, resealing foreign grants, prosecuting or defending our clients’ interests in
+                            contested
+                            succession cases, administration of estates.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+                <div class="practice-details-item">
+                    <div class="blog-details-category">
+                        <ul>
+                            <li>
+                                <a href="{% url 'criminal'%}">
+                                    Criminal Law
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'civil'%}">
+                                    Civil Law
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'conveyancing'%}">
+                                    Conveyancing and Real Estate
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'corporate'%}">
+                                    Corporate and Commercial Law
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'cyber'%}">
+                                    Cyber Law
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Family Law
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="practice-details-contact">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-phone-volume"></i>
+                                <a href="tel:+0725916662">Call : (+254) 0725 916 662</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:info@hjolaw.com">info@hjolaw.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marked-alt"></i>
+                                8th Floor Parkland Road,Victoria Plaza, Nairobi-Kenya
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="help-shape">
+        <img src="{% static 'assets/img/home-one/6.png'%}" alt="Shape">
+    </div>
+</div>
+<!-- End Practice Details -->
+{% endblock %}
